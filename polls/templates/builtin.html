@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% block content %}
+  {{lorem|truncatewords:5}} <br>
+  Rp. {{ my_num|intcomma }} <br>
+  {{arr|length}}
+{% endblock %}
